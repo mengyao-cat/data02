@@ -38,13 +38,14 @@ $(function () {
             }
         });
     });
-$('#login_form').on('click',function(e){
+$('#login_form').on('submit',function(e){
     e.preventDefault();
     $.ajax({
         type:'post',
         url:'/api/login',
         data:$('#login_form').serialize(),
         success:function(res){
+            console.log(res);
             if(res.status!==0)
             {
                 return layer.msg(res.message)
@@ -55,17 +56,5 @@ $('#login_form').on('click',function(e){
         }
     })
 })
-
-
-
-
-
-
-
-
-
-
-
-
 });
 
