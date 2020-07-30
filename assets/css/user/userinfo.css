@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2f3f5;
+}
+.layui-form{
+    width: 40%;
+}
+.layui-form-label{
+width: 100px;
+}
