@@ -13,6 +13,7 @@ $image.cropper(options)
 
 // 当点击上传按钮的时候,用js 来模拟点击input:file文件上传按钮
 $('#btn').on('click', function () {
+  
   $('#file').click();
 })
 $('#file').on('change', function () {
