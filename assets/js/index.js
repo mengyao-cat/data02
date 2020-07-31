@@ -15,6 +15,9 @@ $(function () {
             layer.close(index);
         });
     })
+
+
+})
     // 创建一个函数
     function getUserInfo() {
         $.ajax({
@@ -58,5 +61,3 @@ $(function () {
         })
     }
 
-
-})
